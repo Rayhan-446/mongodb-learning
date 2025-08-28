@@ -11,7 +11,19 @@
 
 
 ## Step 2: CRUD
-- `insertMany()` → insert multiple documents
-- `find({})` → query documents
-- `updateOne()` / `updateMany()` → update docs
-- `deleteOne()` / `deleteMany()` → delete docs
+
+- **Insert**
+  - `insertOne()` → add one doc
+  - `insertMany()` → add multiple docs
+
+- **Read**
+  - `find({})` → query docs
+  - `{ marks: { $gt: 80 } }` → filter with operators
+
+- **Update**
+  - `updateOne({filter}, { $set: {...} })`
+  - `updateMany({filter}, { $inc: {...} })`
+
+- **Delete**
+  - `deleteOne({filter})`
+  - `deleteMany({filter})`
