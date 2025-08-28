@@ -1,9 +1,14 @@
 # MongoDB Learning Notes
 
 ## Step 1: Basics
-- `use myFirstDB` → create/switch database
-- `db.createCollection("students")` → create collection
-- `db.students.insertOne({...})` → insert one document
+
+- `use myFirstDB` → creates/switches database
+- `db.createCollection("students")` → creates collection
+- `insertOne({...})` → insert a single document
+- `insertMany([{...}, {...}])` → insert multiple docs
+- `find()` → shows all documents
+- `find().pretty()` → formatted output
+
 
 ## Step 2: CRUD
 - `insertMany()` → insert multiple documents
