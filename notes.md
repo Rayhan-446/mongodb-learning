@@ -27,3 +27,21 @@
 - **Delete**
   - `deleteOne({filter})`
   - `deleteMany({filter})`
+
+## Step 3: Advanced Queries
+
+### Sorting
+- `{ marks: 1 }` → ascending
+- `{ marks: -1 }` → descending
+
+### Projection (select fields)
+- `{ name: 1, marks: 1, _id: 0 }` → show only name & marks
+
+### Limit & Skip
+- `.limit(n)` → show first n results
+- `.skip(n)` → skip first n results
+
+### Conditions
+- **AND** → `{ dept: "CSE", marks: { $gt: 80 } }`
+- **OR** → `{ $or: [ { dept: "CSE" }, { marks: { $lt: 70 } } ] }`
+- **Combine** → mix AND + OR in one query
