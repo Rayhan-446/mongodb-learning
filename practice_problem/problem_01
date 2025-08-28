@@ -55,6 +55,9 @@ $or → OR condition
 
 { dept: "IT", salary: {$gt:60000} } → AND condition -->
 
+
+
+
 Solution
 // ================================
 // Step 1: Basics
