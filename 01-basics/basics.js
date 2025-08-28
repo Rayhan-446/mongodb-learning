@@ -1,5 +1,5 @@
 // Switch (or create) a database
-use myFirstDB;
+//use myFirstDB;
 
 // Create a collection named "students"
 db.createCollection("students");
