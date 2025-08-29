@@ -45,3 +45,19 @@
 - **AND** → `{ dept: "CSE", marks: { $gt: 80 } }`
 - **OR** → `{ $or: [ { dept: "CSE" }, { marks: { $lt: 70 } } ] }`
 - **Combine** → mix AND + OR in one query
+
+
+## Step 4: Aggregation Framework
+
+Aggregation allows **data analysis, transformation, and summarization** using a pipeline of stages.  
+
+### Pipeline Stages
+- `$match` → filter documents (like WHERE)
+- `$group` → group documents & aggregate (SUM, AVG, COUNT)
+- `$project` → select or transform fields
+- `$sort` → sort documents
+- `$limit` → show first n
+- `$skip` → skip first n
+- `$unwind` → flatten arrays
+
+---
