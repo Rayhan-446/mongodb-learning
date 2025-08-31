@@ -55,3 +55,32 @@ db.employees.updateMany(
 db.employees.aggregate([
   { $unwind: "$skills" }
 ])
+
+
+//8. $lookup (Join Collections)
+db.departments.insertMany([
+  { dept: "IT", head: "Mr. X" },
+  { dept: "HR", head: "Ms. Y" },
+  { dept: "Finance", head: "Mr. Z" }
+])
+
+db.employees.aggregate([
+  {
+    $lookup: {
+      from: "departments",
+      localField: "dept",
+      foreignField: "dept",
+      as: "deptDetails"
+    }
+  }
+])
+
+//⚡ Complex Example – Everything Together
+
+//Find average salary of each department after 2019, sort by highest salary:
+
+db.employees.aggregate([
+  { $match: { joinDate: { $gt: ISODate("2019-01-01") } } },
+  { $group: { _id: "$dept", avgSalary: { $avg: "$salary" } } },
+  { $sort: { avgSalary: -1 } }
+])

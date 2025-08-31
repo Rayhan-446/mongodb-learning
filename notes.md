@@ -78,4 +78,24 @@ $lookup → join with another collection
 
 $unwind → break arrays into individual docs
 
+✨ Key Operators in Aggregation
+
+$sum, $avg, $max, $min → math
+
+$first, $last → pick first/last value in group
+
+$push, $addToSet → put values in array
+
+$toUpper, $substr → string operations
+
+$year, $month, $dayOfMonth → date operations
+
+📝 Summary
+
+Aggregation = pipeline of stages
+
+Common stages: $match, $project, $group, $sort, $limit, $lookup, $unwind
+
+It’s like combining SQL’s WHERE + GROUP BY + JOIN + ORDER BY in one pipeline.
+
 ---
