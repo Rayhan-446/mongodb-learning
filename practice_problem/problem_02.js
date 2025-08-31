@@ -1,13 +1,13 @@
-1.Create a Database "ShopDB"
-2.Create collections: products,employees,business_companies
-3.Insert the values as need
-4.Now run the querries to find the values 
-    i) Find products whose values is greater than or 
-       equal to $10000
-    ii)Find the products "in stock"
-    iii)Find the employees who joined between 2004 to 2011
-    iv)Find products in category "Electronics" or "Bags"
-    v)Find the products price between $100 to $200
+// 1.Create a Database "ShopDB"
+// 2.Create collections: products,employees,business_companies
+// 3.Insert the values as need
+// 4.Now run the querries to find the values 
+//     i) Find products whose values is greater than or 
+//        equal to $10000
+//     ii)Find the products "in stock"
+//     iii)Find the employees who joined between 2004 to 2011
+//     iv)Find products in category "Electronics" or "Bags"
+//     v)Find the products price between $100 to $200
 
 
 
