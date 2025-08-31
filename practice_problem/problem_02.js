@@ -28,17 +28,17 @@ db.employees.insertMany([
   { name: "Sarah", join_year: 2003, dept: "Finance" }
 ])
 
-i)
+//i)
 db.products.find({ price: { $gte: 10000 } })
 
-ii)
+//ii)
 db.products.find({ stock: "in stock" })
 
-iii)
+//iii)
 db.employees.find({ join_year: { $gte: 2004, $lte: 2011 } })
 
-iv)
+//iv)
 db.products.find({ category: { $in: ["Electronics", "Bags"] } })
 
-v)
+//v)
 db.products.find({ price: { $gte: 100, $lte: 200 } })
