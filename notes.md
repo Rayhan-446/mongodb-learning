@@ -61,3 +61,21 @@ Aggregation allows **data analysis, transformation, and summarization** using a 
 - `$unwind` → flatten arrays
 
 ---
+
+Most important stages:
+
+$match → filter documents (like find)
+
+$project → show/hide/reshape fields
+
+$group → group data and do calculations (sum, avg, count, etc.)
+
+$sort → sort documents
+
+$limit / $skip → limit or skip results
+
+$lookup → join with another collection
+
+$unwind → break arrays into individual docs
+
+---
