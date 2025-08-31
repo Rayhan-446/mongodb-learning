@@ -62,7 +62,7 @@ Aggregation allows **data analysis, transformation, and summarization** using a 
 
 ---
 
-Most important stages:
+### Most important stages:
 
 $match → filter documents (like find)
 
@@ -78,7 +78,7 @@ $lookup → join with another collection
 
 $unwind → break arrays into individual docs
 
-✨ Key Operators in Aggregation
+### ✨ Key Operators in Aggregation
 
 $sum, $avg, $max, $min → math
 
@@ -90,7 +90,7 @@ $toUpper, $substr → string operations
 
 $year, $month, $dayOfMonth → date operations
 
-📝 Summary
+### 📝 Summary
 
 Aggregation = pipeline of stages
 
