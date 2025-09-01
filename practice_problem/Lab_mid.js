@@ -1,3 +1,17 @@
+/*1. create a database ‘moviesdb ‘
+2.There are 4 collections: movies
+actors
+acts
+directs
+
+3. Run the queries:
+Find the movies made by hanson after 1997
+Find the the total no of movies of rating 8.2
+Find the actor and diector of ‘fargo’ movie
+Find the movies with rating less than 9 but greater than 5
+Find the actors name with movie rating more than 5 */
+
+
 db.movies.insertMany([
   {_id:1,title:"fargo",year:1996,rating:8.2},
   {_id:2,title:"iron_man",year:1995,rating:6.2},
