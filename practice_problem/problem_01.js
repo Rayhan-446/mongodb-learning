@@ -1,59 +1,59 @@
-// <!-- 🔹 Practice Problems: Steps 1–3
-// Step 1: Basics Practice
+/*🔹 Practice Problems: Steps 1–3
+Step 1: Basics Practice
 
-// Create a database called companyDB.
+Create a database called companyDB.
 
-// Create a collection called employees.
+Create a collection called employees.
 
-// Insert 5 employees with fields:
+Insert 5 employees with fields:
 
-// name, dept, salary, joiningYear
+name, dept, salary, joiningYear
 
-// Display all employees in pretty format.
+Display all employees in pretty format.
 
-// ✅ Tip: Use insertOne() or insertMany(), find().pretty()
+✅ Tip: Use insertOne() or insertMany(), find().pretty()
 
-// Step 2: CRUD Practice
+Step 2: CRUD Practice
 
-// Insert 3 more employees.
+Insert 3 more employees.
 
-// Find all employees in the IT department.
+Find all employees in the IT department.
 
-// Increase salary by 10% for employees who joined before 2022.
+Increase salary by 10% for employees who joined before 2022.
 
-// Delete an employee with salary less than 30,000.
+Delete an employee with salary less than 30,000.
 
-// Update an employee’s department from HR → Admin.
+Update an employee’s department from HR → Admin.
 
-// ✅ Tip:
+✅ Tip:
 
-// $inc → increment numeric fields
+$inc → increment numeric fields
 
-// $set → modify specific fields
+$set → modify specific fields
 
-// deleteOne() / deleteMany() → remove documents
+deleteOne() / deleteMany() → remove documents
 
-// Step 3: Advanced Queries Practice
+Step 3: Advanced Queries Practice
 
-// Find top 3 highest-paid employees.
+Find top 3 highest-paid employees.
 
-// Show only name and salary for employees in IT with salary > 50,000.
+Show only name and salary for employees in IT with salary > 50,000.
 
-// Skip first 2 employees and show the next 3 (sorted by salary descending).
+Skip first 2 employees and show the next 3 (sorted by salary descending).
 
-// Find employees in IT OR HR departments.
+Find employees in IT OR HR departments.
 
-// Find employees who are in IT AND (salary > 60,000 OR joiningYear < 2021).
+Find employees who are in IT AND (salary > 60,000 OR joiningYear < 2021).
 
-// ✅ Tip:
+✅ Tip:
 
-// .sort({salary:-1}) → descending sort
+.sort({salary:-1}) → descending sort
 
-// .limit(n) and .skip(n) → pagination
+.limit(n) and .skip(n) → pagination
 
-// $or → OR condition
+$or → OR condition
 
-// { dept: "IT", salary: {$gt:60000} } → AND condition -->
+{ dept: "IT", salary: {$gt:60000} } → AND condition*/
 
 
 
